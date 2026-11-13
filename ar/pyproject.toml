@@ -1,0 +1,21 @@
+[project]
+name = "svgagent"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "lancedb>=0.41.0",
+    "langchain-core>=1.8.0",
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.21",
+    "pyarrow>=26.0.1",
+    "resvg-py>=0.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
